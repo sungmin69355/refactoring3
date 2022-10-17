@@ -24,4 +24,8 @@ public class Billing {
     private String formatBill(Customer customer) {
         return "sending bill for " + customer.getName();
     }
+
+    public double getTotalOutstandingAndSendBill() {
+        return 0;
+    }
 }
