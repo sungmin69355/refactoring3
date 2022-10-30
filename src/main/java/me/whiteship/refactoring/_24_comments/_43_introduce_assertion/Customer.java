@@ -13,6 +13,10 @@ public class Customer {
     }
 
     public void setDiscountRate(Double discountRate) {
+        //assert discountRate != null && discountRate > 0; //가정을 한다.
+        if (discountRate != null && discountRate > 0){
+            throw  new IllegalStateException(discountRate + "can't be minus.");
+        }
         this.discountRate = discountRate;
     }
 }
